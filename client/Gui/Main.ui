@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_New_cofig"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_config"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuFInd_Device">
+     <property name="title">
+      <string>Find Device</string>
+     </property>
+     <addaction name="actionNew_Device"/>
+     <addaction name="separator"/>
+     <addaction name="actionMobile_Device"/>
+    </widget>
+    <addaction name="menuFInd_Device"/>
+    <addaction name="separator"/>
+    <addaction name="actionDoc"/>
+   </widget>
+   <widget class="QMenu" name="menudevice">
+    <property name="title">
+     <string>Device</string>
+    </property>
+    <addaction name="actionupload_confing"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuReports"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menudevice"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_New_cofig">
+   <property name="icon">
+    <iconset>
+     <normalon>../../../../Downloads/BlackArch_logo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New config</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_config">
+   <property name="text">
+    <string>Open config</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionNew_Device">
+   <property name="text">
+    <string>New Device</string>
+   </property>
+  </action>
+  <action name="actionMobile_Device">
+   <property name="text">
+    <string>Mobile Device</string>
+   </property>
+  </action>
+  <action name="actionDoc">
+   <property name="text">
+    <string>&amp;Doc</string>
+   </property>
+  </action>
+  <action name="actionupload_confing">
+   <property name="text">
+    <string>upload confing</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+U</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
